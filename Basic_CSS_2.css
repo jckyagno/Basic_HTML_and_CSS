@@ -1,0 +1,9 @@
+/* This code is about assigning an orange font color with a blue background! */
+
+p	{
+		color: Orange;
+		background-color: SteelBlue;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 2px 2px #ff0000;
+}
