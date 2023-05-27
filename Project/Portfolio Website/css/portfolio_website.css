@@ -45,7 +45,7 @@ h1 {
 }
 
 .spacer {
-    height: 400px;
+    height: 760px;
 }
 
 
@@ -93,8 +93,7 @@ h1 {
     text-align: center;
     opacity: .9;
     transition: .5s;
-    padding-top: 5px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .video_text:hover {
