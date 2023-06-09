@@ -5,6 +5,7 @@
 		<title>JAPAN TRAVEL LOGS</title>
 		<link rel="stylesheet" href="./css/one_page_website.css">
 		<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+		<script src="./js/one-page-website.js" defer></script>
 	</head>
 	<body>
 	
@@ -38,125 +39,234 @@
 				<div class="flex-container">
 				
 					<!-- PHOTO CONTAINER 1 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(1)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_1.jpg" alt="">
+							<img src="./images/thumb/thumbnail_1.jpg" alt="Gundam at Odaiba">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Technology</span>
+								<span>Gundam at Odaiba</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 1 -->
 					
 					<!-- PHOTO CONTAINER 2 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(2)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_2.jpg" alt="">
+							<img src="./images/thumb/thumbnail_2.jpg" alt="Yokohama Nightlife">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Nightlife</span>
+								<span>Yokohama Nightlife</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- PHOTO CONTAINER 3 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(3)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_3.jpg" alt="">
+							<img src="./images/thumb/thumbnail_3.jpg" alt="Sashimi">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Food</span>
+								<span>Sashimi</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 3 -->
 					
 					<!-- PHOTO CONTAINER 4 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(4)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_4.jpg" alt="">
+							<img src="./images/thumb/thumbnail_4.jpg" alt="Harajuku Station">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Public Transportation</span>
+								<span>Harajuku Station</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 4 -->
 					
 					<!-- PHOTO CONTAINER 5 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(5)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_5.jpg" alt="">
+							<img src="./images/thumb/thumbnail_5.jpg" alt="Shin-Okubo">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Shopping</span>
+								<span>Shin-Okubo</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 5 -->
 					
 					<!-- PHOTO CONTAINER 6 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(6)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_6.jpg" alt="">
+							<img src="./images/thumb/thumbnail_6.jpg" alt="Tokyo Station">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Monuments</span>
+								<span>Tokyo Station</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 6 -->
 					
 					<!-- PHOTO CONTAINER 7 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(7)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_7.jpg" alt="">
+							<img src="./images/thumb/thumbnail_7.jpg" alt="Sensoji Temple">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Temples</span>
+								<span>Sensoji Temple</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 7 -->
 					
 					<!-- PHOTO CONTAINER 8 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(8)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_8.jpg" alt="">
+							<img src="./images/thumb/thumbnail_8.jpg" alt="Asakusa Downtown">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Downtown</span>
+								<span>Asakusa Downtown</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 8 -->
 					
 					<!-- PHOTO CONTAINER 9 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(9)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_9.jpg" alt="">
+							<img src="./images/thumb/thumbnail_9.jpg" alt="Small Jizo Statue in Nikko">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Nature Spaces</span>
+								<span>Small Jizo Statue in Nikko</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 9 -->
 
 					<!-- PHOTO CONTAINER 10 -->
-					<div class="photo-container">
+					<div class="photo-container" onclick="openModal();currentSlide(10)">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_10.jpg" alt="">
+							<img src="./images/thumb/thumbnail_10.jpg" alt="New Year's Mochi">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
-								<span>Culture</span>
+								<span>New Year's Mochi</span>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 10 -->
 					
+					<!-- LIGHTBOX -->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 10</div>
+								<img src="./images/thumb/thumbnail_1.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 10</div>
+								<img src="./images/thumb/thumbnail_2.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 10</div>
+								<img src="./images/thumb/thumbnail_3.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">4 / 10</div>
+								<img src="./images/thumb/thumbnail_4.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5 / 10</div>
+								<img src="./images/thumb/thumbnail_5.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">6 / 10</div>
+								<img src="./images/thumb/thumbnail_6.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">7 / 10</div>
+								<img src="./images/thumb/thumbnail_7.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">8 / 10</div>
+								<img src="./images/thumb/thumbnail_8.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">9 / 10</div>
+								<img src="./images/thumb/thumbnail_9.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">10 / 10</div>
+								<img src="./images/thumb/thumbnail_10.jpg" style="width:100%">
+							</div>
+
+							<!-- Next/previous controls -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<!-- Caption text -->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<!-- Thumbnail image controls -->
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_1_small.jpg" onclick="currentSlide(1)" alt="Gundam at Odaiba">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_2_small.jpg" onclick="currentSlide(2)" alt="Yokohama Nightlife">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_3_small.jpg" onclick="currentSlide(3)" alt="Sashimi">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_4_small.jpg" onclick="currentSlide(4)" alt="Harajuku Station">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_5_small.jpg" onclick="currentSlide(5)" alt="Shin-Okubo">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_6_small.jpg" onclick="currentSlide(6)" alt="Tokyo Station">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_7_small.jpg" onclick="currentSlide(7)" alt="Sensoji Temple">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_8_small.jpg" onclick="currentSlide(8)" alt="Asakusa Downtown">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_9_small.jpg" onclick="currentSlide(9)" alt="Small Jizo Statue in Nikko">
+							</div>
+
+							<div class="column">
+								<img class="thumbnail" src="./images/thumb/thumbnail_10_small.jpg" onclick="currentSlide(10)" alt="New Year's Mochi">
+							</div>
+							
+						</div>
+					</div>
+					<!-- END LIGHTBOX -->
+
 				</div>
 			</div>
 		</section>
